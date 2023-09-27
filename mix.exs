@@ -20,7 +20,7 @@ defmodule Configuration.MixProject do
   def application do
     [
       mod: {Configuration.Application, []},
-      extra_applications: [:logger, :runtime_tools]
+      extra_applications: [:logger, :inets, :runtime_tools]
     ]
   end
 

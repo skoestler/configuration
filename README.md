@@ -1,18 +1,17 @@
-# Configuration
+Steps
 
-To start your Phoenix server:
+`mix deps.get`
 
-  * Install dependencies with `mix deps.get`
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+`mix phx.gen.release`
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+`COLOR=red SHAPE=triangle mix phx.server`
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+`COLOR=red SHAPE=triangle mix release`
 
-## Learn more
+`COLOR=blue SHAPE=square _build/dev/rel/configuration/bin/server`
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+Conclusion
+
+The COLOR environment variable that is reference in config.exs is referenced when
+the applicaton is compiled, changing the COLOR variable when running the resulting
+build has no effect.
