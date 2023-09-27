@@ -2,8 +2,6 @@ Steps
 
 `mix deps.get`
 
-`mix phx.gen.release`
-
 `COLOR=red SHAPE=triangle mix phx.server`
 
 `COLOR=red SHAPE=triangle mix release`
